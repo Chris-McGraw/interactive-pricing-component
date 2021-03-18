@@ -186,6 +186,57 @@ h4 {
   padding: 0 45px;
 }
 
+#pageviews-for-price-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  position: absolute;
+  top: 39px;
+
+  width: 100%;
+  height: auto;
+  padding: 0 40px;
+}
+
+#pageviews {
+  display: inline-grid;
+  grid-column: span 1;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: hsl(225, 20%, 60%);
+
+  white-space: nowrap;
+}
+
+#price {
+  display: grid;
+  grid-column: 2;
+  justify-self: flex-end;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 39px;
+  font-weight: 800;
+  color: hsl(227, 35%, 25%);
+}
+
+#price-per-span {
+  display: grid;
+  grid-column: 2;
+  align-items: center;
+
+  padding-left: 7px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: hsl(225, 20%, 60%);
+}
+
 #price-slider {
   width: 100%;
 
