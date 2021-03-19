@@ -104,10 +104,6 @@ input[type=range]::-moz-range-thumb:active {
 }
 
 #ipc-outer-bg-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   position: relative;
 
   height: 100%;
@@ -125,6 +121,7 @@ input[type=range]::-moz-range-thumb:active {
   height: auto;
 
   position: relative;
+  top: 120.9px;
 }
 
 #ipc-circle-bg-container {
@@ -461,5 +458,21 @@ input:checked + .toggle-slider:before {
 
   #cta-link:hover {
     color: hsl(0, 0%, 100%);
+  }
+}
+
+
+
+/* -------------------------- MEDIA QUERY >= 1441 -------------------------- */
+@media screen and (min-width: 1441px) {
+  #ipc-outer-bg-container {
+    background-image:
+      url("images/bg-pattern.svg"),
+      url("images/bg-pattern.svg"),
+      url("images/bg-pattern.svg");
+    background-position:
+      left top,
+      1200px top,
+      2400px top;
   }
 }
