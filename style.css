@@ -298,11 +298,17 @@ h4 {
   border-radius: 20px;
 }
 
-#yearly-discount {
+#yearly-discount-lg {
+  display: block;
+
   font-family: "Manrope", sans-serif;
   font-size: 10px;
   font-weight: 800;
   color: hsl(15, 100%, 70%);
+}
+
+#yearly-discount-sm {
+  display: none;
 }
 
 .switch {
@@ -520,17 +526,83 @@ input:checked + .toggle-slider:before {
     margin-top: 65px;
   }
 
-
-
   #ipc-slider-container {
+    height: 276px;
+  }
+
+  #pageviews-for-price-container {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 0px;
+
+    height: 100%;
+    padding: 0px;
+  }
+
+  #pageviews {
+    display: block;
+
+    position: absolute;
+    top: 30px;
+
+    width: 100%;
+
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #price-slider {
+    position: absolute;
+    top: 90px;
+
+    width: 279px;
+  }
+
+  #price {
+    display: inline-flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 137px;
+
+    width: 100%;
+
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #price-per-span {
+    display: inline-flex;
+  }
+
+  #monthly-billing {
+    left: 45px;
+  }
+
+  #yearly-billing {
+    right: 58px;
+  }
+
+  #discount-container {
+    right: 11px;
+
+    width: 40px;
+  }
+
+  #yearly-discount-lg {
     display: none;
   }
 
-  #billing-interval-container {
-    display: none;
+  #yearly-discount-sm {
+    display: block;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    color: hsl(15, 100%, 70%);
   }
-
-
 
   #ipc-cta-container {
     grid-template-columns: repeat(1, 1fr);
