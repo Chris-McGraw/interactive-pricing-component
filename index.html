@@ -11,7 +11,7 @@
 
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <script type="text/javascript" src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,8 +28,8 @@
             <p id="price">$16.00<span id="price-per-span"> / month</span></p>
           </div>
 
-          <input name="price-slider" id="price-slider" className="slider" type="range"
-          min="-2" max="2" step="1" defaultValue="0"
+          <input name="price-slider" id="price-slider" type="range"
+          min="-2" max="2" step="1" value="0"
           aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider" />
 
           <div id="billing-interval-container">
@@ -67,12 +67,5 @@
       </div>
     </div>
   </div>
-
-
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
