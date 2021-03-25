@@ -29,13 +29,15 @@
           </div>
 
           <input name="price-slider" id="price-slider" className="slider" type="range"
-          min="-2" max="2" step="1" defaultValue="0" />
+          min="-2" max="2" step="1" defaultValue="0"
+          aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider" />
 
           <div id="billing-interval-container">
             <p id="monthly-billing">Monthly Billing</p>
 
             <label class="switch">
-              <input id="interval-switch" type="checkbox" />
+              <input id="interval-switch" type="checkbox"
+              aria-checked=“false” aria-label="yearly payment interval toggle switch" />
               <span class="toggle-slider round"></span>
             </label>
 
