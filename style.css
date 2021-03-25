@@ -33,9 +33,9 @@ input[type=range] {
   cursor: pointer;
 }
 
-input[type=range]:focus {
+/* input[type=range]:focus {
   outline: none;
-}
+} */
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
