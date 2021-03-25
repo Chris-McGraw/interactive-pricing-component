@@ -71,10 +71,14 @@ function handleBillingIntToggle(value) {
   if(value === true) {
     ipcPricingInterval = "year";
 
+    document.getElementById("interval-switch").setAttribute("aria-checked", true);
+
     handleSliderChange(document.getElementById("price-slider").value);
   }
   else {
     ipcPricingInterval = "month";
+
+    document.getElementById("interval-switch").setAttribute("aria-checked", false);
 
     handleSliderChange(document.getElementById("price-slider").value);
   }
